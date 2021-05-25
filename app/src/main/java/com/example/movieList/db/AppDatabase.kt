@@ -10,7 +10,7 @@ import com.example.movieList.db.dao.MoviesDao
 import com.example.movieList.db.entity.MoviesEntity
 import com.example.movieList.db.entity.Results
 
-@Database(entities = [MoviesEntity::class], version = 1, exportSchema = false)
+@Database(entities = [Results::class], version = 1, exportSchema = false)
 @TypeConverters( ProfileTypeConverter::class)
 abstract class AppDatabase: RoomDatabase() {
     abstract val moviesDao: MoviesDao
